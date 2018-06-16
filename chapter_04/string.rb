@@ -21,3 +21,26 @@ author = "Subrat Rout"
 title = "Ruby"
 
 puts "#{title} is written by #{author}."
+
+puts "  stripped from both side   ".strip
+puts "     Stripped".lstrip
+
+puts "It was a dark and stormy night\n"
+puts "It was a dark and stormy night\n".chomp # only remove the last newline character
+
+puts "It was a dark and stormy night".chop # chop the last character
+
+puts 'It is warm outside'.sub( 'warm', 'cold' )
+
+p 'It was a dark and stormy night'.split # split at space
+
+puts "It was a dark and stormy night".index( "dark" )
+
+
+# Most commonly we think of strings as being collections of characters
+"Clark".each_char{|c| puts c}
+
+# You can also look at a string as a collection of bytes
+"Clark".each_byte{|b| puts b}
+
+# Ruby strings are mutable.
